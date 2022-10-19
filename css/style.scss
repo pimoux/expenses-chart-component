@@ -116,12 +116,14 @@ $veryPaleOrange: hsl(33, 100%, 98%);
 
                     .tooltip {
                         position: absolute;
-                        background-color: black;
+                        background-color: $darkBrown;
                         color: $cream;
                         margin-bottom: 2rem;
                         opacity: 0;
+                        font-size: 14px;
                         transition: opacity 0.3s;
-                        cursor: pointer;
+                        padding: 0.5rem 0.5rem;
+                        border-radius: 0.25rem;
                     }
                 }
             }
@@ -171,6 +173,105 @@ $veryPaleOrange: hsl(33, 100%, 98%);
                     .from-last-month {
                         color: $mediumBrown;
                         font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #main {
+        .card {
+            width: 540px;
+            height: 655px;
+            margin-bottom: 0.5rem;
+
+            .header {
+                height: 125px;
+                border-radius: 1.25rem;
+
+                .current-balance {
+
+                    p:first-child {
+                        font-size: 18px;
+                        margin-left: 1rem;
+                        margin-top: 0.5rem;
+                        margin-bottom: 0.5rem;
+                    }
+
+                    p:last-child {
+                        font-size: 30px;
+                        letter-spacing: 0.75px;
+                        margin-left: 1.2rem;
+                    }
+                }
+
+                img {
+                    transform: scale(1);
+                    margin-right: 1.5rem;
+                }
+            }
+
+            .body {
+                margin-top: 1.5rem;
+                height: 510px;
+                padding: 1.5rem 2.2rem;
+
+                .title {
+                    font-size: 32px;
+                    margin-left: 0.25rem;
+                    margin-top: 0.5rem;
+                }
+
+                .stats {
+                    margin-top: 4.2rem;
+                    margin-left: -0.2rem;
+
+                    .stat {
+                        margin: 0 0.55rem;
+
+                        .day {
+                            font-size: 16px;
+                            margin-right: 0.2rem;
+                            margin-left: 0.25rem;
+                            margin-top: 0.3rem;
+                        }
+
+                        .bar {
+                            width: 50px;
+                        }
+
+                        .tooltip {
+                            font-size: 18px;
+                            padding: 0.5rem 0.6rem;
+                        }
+                    }
+                }
+
+                .separator {
+                    margin-top: 2rem;
+                }
+
+                .global-stats {
+                    div:first-child {
+                        margin-left: 0.2rem;
+                        margin-top: 2.1rem;
+
+                        .total-month {
+                            font-size: 18px;
+                        }
+
+                        .month-amount {
+                            font-size: 48px;
+                            margin-top: 0rem;
+                        }
+                    }
+
+                    div:last-child {
+                        margin-right: 0.4rem;
+                        margin-top: 4rem;
+                        font-size: 18px;
                     }
                 }
             }
