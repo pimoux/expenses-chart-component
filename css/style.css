@@ -122,6 +122,7 @@
   background-color: #ec775f;
   border-radius: 0.25rem;
   opacity: 1;
+  cursor: pointer;
 }
 
 #main .card .body .stats .stat .bar:hover {

@@ -104,6 +104,7 @@ $veryPaleOrange: hsl(33, 100%, 98%);
                         background-color: $softRed;
                         border-radius: 0.25rem;
                         opacity: 1;
+                        cursor: pointer;
 
                         &:hover {
                             opacity: 0.6;
